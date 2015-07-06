@@ -1,0 +1,7 @@
+gemignore
+chef
+knife-solo
+serverspec
+trello_cli
+rspec
+bundler

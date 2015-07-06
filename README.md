@@ -1,10 +1,20 @@
 # OSXBootstrap
 
-自分の環境のsetup関連のwrapperなbootstrapスクリプト予定地
+# a precondition
 
-* [ ] TODO: umiyosh/Brewfileのsetup
-* [ ] TODO: umiyosh/dotfilesのsetup
-* [ ] TODO: umiyosh/dotfilesのzsh-antigen setup
-* [ ] TODO: umiyosh/Brewfileに置いてるmiscなスクリプトの移設(各言語の*envなsetupとモジュールのインストール)と並列実行化
-* [ ] TODO: karabiner(umiyosh/KeyRemap4MacBook-private-xml)のcloneとsetup
-* [ ] TODO: OSX defaults writeの拡充(キーリピート高速化など)
+* install xcode from AppStore. And Command line tools.
+* <code>ssh-kegen -t rsa</code> and add setting to Deploy key
+
+# instruction
+
+~~~
+% git clone https://github.com/umiyosh/OSXBootstrap.git
+% cd OSXBootstrap/
+% ./bootstrap.sh
+~~~
+
+# See also
+
+* [umiyosh/Brewfile](https://github.com/umiyosh/Brewfile)
+* [umiyosh/dotfiles](https://github.com/umiyosh/dotfiles)
+

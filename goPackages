@@ -1,0 +1,14 @@
+github.com/AlekSi/zabbix
+github.com/crowdmob/goamz/sqs
+github.com/davecheney/junk/glyph
+github.com/hakobe/htmlcatgo
+github.com/howeyc/fsnotify
+github.com/josharian/impl
+github.com/k0kubun/pp
+github.com/kisielk/godepgraph
+github.com/monochromegane/mdt/...
+github.com/motemen/gore
+github.com/nsf/gocode
+github.com/sbinet/go-eval
+github.com/sbinet/igo
+golang.org/x/tools/cmd/godoc

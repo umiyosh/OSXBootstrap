@@ -1,0 +1,6 @@
+Mozilla::CA
+Net::OAuth
+Net::Twitter::Lite::WithAPIv1_1
+Scalar::Util
+Encode
+Growl::GNTP
