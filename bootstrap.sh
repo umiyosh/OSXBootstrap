@@ -7,6 +7,7 @@ git clone https://github.com/umiyosh/Brewfile.git ~/Brewfile/
 cd ~/Brewfile/
 ./brewSetup.sh
 cd $workdir
+read -q "Check Result.And press Enter key"
 
 # Dotfile
 git clone https://github.com/umiyosh/dotfiles.git ~/dotfiles/
@@ -15,7 +16,7 @@ cd ~/dotfiles/
 cd $workdir
 
 # zsh plugin install by antigen
-tmux
+zsh
 
 # wait the sync of Dropbox
 read -q "Wait until the sync of Dropbox is finished.And press Enter."
