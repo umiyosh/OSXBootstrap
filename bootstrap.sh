@@ -25,9 +25,6 @@ cd ~/dotfiles/
 ./setup.sh
 cd $workdir
 
-# zsh plugin install by antigen
-zsh
-
 # wait the sync of Dropbox
 read -q "REP?Wait until the sync of Dropbox is finished.if the sync is ok, Press Y/y, if you want to cancle press ctrl+c."
 
