@@ -15,7 +15,7 @@ cd $workdir
 read -q "REP?Check Result.if result is ok, Press Y/y, if you want to cancle press ctrl+c."
 
 # Dotfile
-if [[ -d  ~/dotfiles/ ]]; then
+if [[ ! -d  ~/dotfiles/ ]]; then
   git clone https://github.com/umiyosh/dotfiles.git ~/dotfiles/
 else
   cd ~/dotfiles/
