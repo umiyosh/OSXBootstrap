@@ -12,7 +12,7 @@ fi
 cd ~/Brewfile/
 ./brewSetup.sh
 cd $workdir
-read -q "Check Result.And press Enter key"
+read -q "REP?Check Result.if result is ok, Press Y/y, if you want to cancle press ctrl+c."
 
 # Dotfile
 if [[ -d  ~/dotfiles/ ]]; then
@@ -29,7 +29,7 @@ cd $workdir
 zsh
 
 # wait the sync of Dropbox
-read -q "Wait until the sync of Dropbox is finished.And press Enter."
+read -q "REP?Wait until the sync of Dropbox is finished.if the sync is ok, Press Y/y, if you want to cancle press ctrl+c."
 
 # OSX setting and Programing Lunguage seting up
 ./bin/misc.sh
