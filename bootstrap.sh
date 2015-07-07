@@ -3,14 +3,24 @@
 workdir=$(pwd)
 
 # Brewfile
-git clone https://github.com/umiyosh/Brewfile.git ~/Brewfile/
+if [[ ! -d ~/Brewfile/ ]]; then
+  git clone https://github.com/umiyosh/Brewfile.git ~/Brewfile/
+else
+  cd ~/Brewfile/
+  git pull origin master
+fi
 cd ~/Brewfile/
 ./brewSetup.sh
 cd $workdir
 read -q "Check Result.And press Enter key"
 
 # Dotfile
-git clone https://github.com/umiyosh/dotfiles.git ~/dotfiles/
+if [[ -d  ~/dotfiles/ ]]; then
+  git clone https://github.com/umiyosh/dotfiles.git ~/dotfiles/
+else
+  cd ~/dotfiles/
+  git pull origin master
+fi
 cd ~/dotfiles/
 ./setup.sh
 cd $workdir
