@@ -8,6 +8,7 @@
 # instruction
 
 ~~~
+% sudo xcodebuild -license
 % git clone https://github.com/umiyosh/OSXBootstrap.git
 % cd OSXBootstrap/
 % ./bootstrap.sh
