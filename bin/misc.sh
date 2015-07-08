@@ -22,8 +22,9 @@ killall Finder
 # plist restore
 if [[ ! -e $HOME/Dropbox/Mackup/.mackup.cfg ]]; then
   ln -s $HOME/dotfiles/.mackup.cfg $HOME/Dropbox/Mackup/.mackup.cfg
-  mackup restore
 fi
+
+mackup restore
 
 # karabiner setting
 if [[ ! -d $HOME/Library/Application\ Support/KeyRemap4MacBook ]]; then
