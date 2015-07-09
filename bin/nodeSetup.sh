@@ -6,4 +6,5 @@ nodebrew use latest
 npm install -g coffee-script
 npm install electron-prebuilt -g
 npm install -g bower
+npm install -g vmd
 
