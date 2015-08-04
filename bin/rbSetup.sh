@@ -5,7 +5,7 @@
 # ruby-gem
 # TODO: 妥当なPATHの解決
 rvm install ruby-2.0.0-p576
-rvm use ruby-2.0.0-p576
+rvm use ruby-2.0.0-p576 --default
 cat ./rubyPackages | while read package
 do
   gem install $package
