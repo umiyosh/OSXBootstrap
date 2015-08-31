@@ -5,3 +5,4 @@ serverspec
 trello_cli
 rspec
 bundler
+ec2ssh
