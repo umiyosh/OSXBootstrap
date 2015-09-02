@@ -3,9 +3,8 @@
 # node-npm
 nodebrew install latest
 nodebrew use latest
-npm install -g coffee-script
-npm install electron-prebuilt -g
-npm install -g bower
-npm install -g vmd
-npm install -g jsonlint
+cat ./nodePackages | while read package
+do
+  npm install -g $package
+done
 
