@@ -7,4 +7,5 @@ npm install -g coffee-script
 npm install electron-prebuilt -g
 npm install -g bower
 npm install -g vmd
+npm install -g jsonlint
 
