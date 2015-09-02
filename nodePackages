@@ -3,3 +3,4 @@ electron-prebuilt
 bower
 vmd
 jsonlint
+js-yaml
