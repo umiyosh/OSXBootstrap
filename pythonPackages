@@ -12,3 +12,6 @@ fabric
 bitbucket-cli
 virtualenv
 awscli
+actdiag
+blockdiag
+seqdiag
