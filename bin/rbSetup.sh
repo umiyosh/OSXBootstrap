@@ -3,6 +3,6 @@
 # TODO: 妥当なPATHの解決
 cat ./rubyPackages | while read package
 do
-  gem install $package
+  sudo gem install $package
 done
 

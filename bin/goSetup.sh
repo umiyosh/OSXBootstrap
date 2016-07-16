@@ -3,8 +3,10 @@
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 source $HOME/.gvm/scripts/gvm
 
-gvm install go1.5
-gvm use go1.5 --default
+gvm install go1.4 -B
+gvm use go1.4 --default
+gvm install go1.6.2
+gvm use go1.6.2 --default
 
 # go-get
 # TODO: 開発環境回りsetup
