@@ -12,3 +12,4 @@ github.com/nsf/gocode
 github.com/sbinet/go-eval
 github.com/sbinet/igo
 golang.org/x/tools/cmd/godoc
+github.com/dufferzafar/cheat

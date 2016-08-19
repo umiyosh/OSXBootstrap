@@ -14,3 +14,5 @@ cat ./goPackages | while read package
 do
   go get $package
 done
+
+cheat fetch
