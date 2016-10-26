@@ -17,3 +17,4 @@ blockdiag
 seqdiag
 autopep8
 vim-vint
+flake8
