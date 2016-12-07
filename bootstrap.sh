@@ -2,7 +2,7 @@
 
 workdir=$(pwd)
 
-Brewfile
+# Brewfile
 if [[ ! -d ~/Brewfile/ ]]; then
  git clone https://github.com/umiyosh/Brewfile.git ~/Brewfile/
 else
