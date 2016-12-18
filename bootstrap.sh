@@ -2,6 +2,20 @@
 
 workdir=$(pwd)
 
+function setUpDotfiles() {
+  dotdir=$1
+  dotrepo=$2
+  if [[ ! -d  $dotdir ]]; then
+    git clone $dotrepo $dotdir
+  else
+    cd $dotdir
+    git pull origin master
+  fi
+  cd $dotdir
+  ./setup.sh
+  cd $workdir
+}
+
 # Brewfile
 if [[ ! -d ~/Brewfile/ ]]; then
  git clone https://github.com/umiyosh/Brewfile.git ~/Brewfile/
@@ -15,15 +29,8 @@ cd $workdir
 read -q "REP?Check Result.if result is ok, Press Y/y, if you want to cancle press ctrl+c."
 
 # Dotfile
-if [[ ! -d  ~/dotfiles/ ]]; then
-  git clone https://github.com/umiyosh/dotfiles.git ~/dotfiles/
-else
-  cd ~/dotfiles/
-  git pull origin master
-fi
-cd ~/dotfiles/
-./setup.sh
-cd $workdir
+setUpDotfiles ~/dotfiles/ https://github.com/umiyosh/dotfiles.git
+setUpDotfiles ~/dotfiles_private/ https://github.com/umiyosh/dotfiles_private.git
 
 # wait the sync of Dropbox
 read -q "REP?Wait until the sync of Dropbox is finished.if the sync is ok, Press Y/y, if you want to cancle press ctrl+c."
