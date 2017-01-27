@@ -44,6 +44,7 @@ brew file set_repo
 ./bin/nodeSetup.sh
 ./bin/plSetup.sh
 ./bin/rbSetup.sh
+./bin/scalaSetup.sh
 
 # mvim
 wget http://repo.or.cz/w/MacVim/KaoriYa.git/blob_plain/HEAD:/src/MacVim/mvim
