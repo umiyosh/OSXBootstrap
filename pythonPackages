@@ -19,3 +19,4 @@ autopep8
 vim-vint
 flake8
 locustio
+yapf
