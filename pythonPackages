@@ -21,3 +21,4 @@ flake8
 locustio
 yapf
 isort
+ptpython
