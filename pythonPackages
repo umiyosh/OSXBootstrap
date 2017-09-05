@@ -24,3 +24,4 @@ isort
 ptpython
 awscli
 sh
+pipenv
