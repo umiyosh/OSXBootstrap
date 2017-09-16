@@ -25,3 +25,4 @@ ptpython
 awscli
 sh
 pipenv
+powerline-status
