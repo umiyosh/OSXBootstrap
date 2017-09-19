@@ -24,6 +24,7 @@ isort
 ptpython
 awscli
 sh
+delegator.py
 pipenv
 powerline-status
 trash-cli
