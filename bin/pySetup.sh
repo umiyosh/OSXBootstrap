@@ -4,6 +4,6 @@
 # TODO: 妥当なPATHの解決
 pyenv virtualenv --distribute 2.7.12 sandbox2712
 pyenv install 2.7.12
-pyenv local sandbox2712
+pyenv global sandbox2712
 pip install -r ./pythonPackages
 
