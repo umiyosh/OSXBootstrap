@@ -7,3 +7,8 @@ pyenv install 2.7.12
 pyenv global sandbox2712
 pip install -r ./pythonPackages
 
+curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+cat ./pipsiPackages | while read package
+do
+  pipsi install $package
+done
