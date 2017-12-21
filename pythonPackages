@@ -1,16 +1,14 @@
-http
 httpie
 Jinja2
-logging
 MarkupSafe
 Pygments
-pyzabbix
 requests
 terminal
 ansible
 fabric
 bitbucket-cli
 virtualenv
+virtualenvwrapper
 awscli
 actdiag
 blockdiag
@@ -21,6 +19,8 @@ flake8
 locustio
 yapf
 isort
+pyflakes
+pylint
 ptpython
 awscli
 sh

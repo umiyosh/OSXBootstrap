@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 
-# python-pip
-CONFIGURE_OPTS="--enable-shared" pyenv install 3.6.3
-CONFIGURE_OPTS="--enable-shared" pyenv install 2.7.14
-pyenv global sandbox2712
-pyenv global 3.6.3 2.7.14
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME=$HOME/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
+pip install -r ./pythonPackages
+mkvirtualenv py2.7-global --python=python2.7
+workon py2.7-global
+pip install -r ./pythonPackages
+mkvirtualenv py3.6-global --python=python3.6
+workon py3.6-global
 pip install -r ./pythonPackages
 
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
