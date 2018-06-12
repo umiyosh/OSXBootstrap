@@ -5,8 +5,8 @@ source $HOME/.gvm/scripts/gvm
 
 gvm install go1.4 -B
 gvm use go1.4 --default
-gvm install go1.7
-gvm use go1.7 --default
+gvm install go1.10
+gvm use go1.10 --default
 
 # go-get
 # TODO: 開発環境回りsetup
