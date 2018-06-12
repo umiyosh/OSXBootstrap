@@ -12,3 +12,4 @@ github.com/sbinet/go-eval
 github.com/sbinet/igo
 golang.org/x/tools/cmd/godoc
 github.com/dufferzafar/cheat
+-u github.com/derekparker/delve/cmd/dlv
