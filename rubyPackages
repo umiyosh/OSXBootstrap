@@ -6,3 +6,4 @@ trello_cli
 rspec
 bundler
 ec2ssh
+redis-stat
