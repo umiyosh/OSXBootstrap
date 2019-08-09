@@ -6,3 +6,7 @@ Encode
 Growl::GNTP
 App::Ack
 App::St
+Text::CSV::Simple
+local::lib
+Set::CrossProduct
+Text::CSV_XS
