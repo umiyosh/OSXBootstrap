@@ -27,6 +27,5 @@ sh
 delegator.py
 powerline-status
 trash-cli
-nvim
 neovim
 ansible-lint
