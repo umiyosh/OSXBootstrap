@@ -37,7 +37,7 @@ setUpDotfiles ~/.config/alacritty/ https://github.com/umiyosh/alacritty
 # wait the sync of Dropbox
 read -q "REP?Wait until the sync of Dropbox is finished.if the sync is ok, Press Y/y, if you want to cancle press ctrl+c."
 
-OSX setting and Programing Lunguage seting up
+# OSX setting and Programing Lunguage seting up
 ./bin/misc.sh
 ./bin/pySetup.sh
 brew install rcmdnk/file/brew-file
