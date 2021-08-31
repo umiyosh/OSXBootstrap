@@ -31,6 +31,8 @@ read -q "REP?Check Result.if result is ok, Press Y/y, if you want to cancle pres
 # Dotfile
 setUpDotfiles ~/dotfiles/ https://github.com/umiyosh/dotfiles.git
 setUpDotfiles ~/dotfiles_private/ https://github.com/umiyosh/dotfiles_private.git
+setUpDotfiles ~/.config/karabiner/ git clone https://github.com/umiyosh/karabiner.git
+setUpDotfiles ~/.config/alacritty/ git clone https://github.com/umiyosh/alacritty
 
 # wait the sync of Dropbox
 read -q "REP?Wait until the sync of Dropbox is finished.if the sync is ok, Press Y/y, if you want to cancle press ctrl+c."
