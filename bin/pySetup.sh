@@ -12,3 +12,5 @@ do
   # brew install pipx or install via brewfile
   pipx install $package
 done
+
+pip install -r ./pythonPackages
