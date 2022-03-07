@@ -14,3 +14,4 @@ golang.org/x/tools/cmd/godoc
 github.com/dufferzafar/cheat
 -u github.com/derekparker/delve/cmd/dlv
 github.com/sclevine/yj
+github.com/rakyll/gotest
