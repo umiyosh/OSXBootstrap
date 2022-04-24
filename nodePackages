@@ -6,3 +6,4 @@ jsonlint
 js-yaml
 deepl-cli
 prettier
+bash-language-server
