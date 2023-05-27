@@ -1,17 +1,5 @@
-github.com/crowdmob/goamz/sqs
-github.com/davecheney/junk/glyph
-github.com/hakobe/htmlcatgo
-github.com/howeyc/fsnotify
-github.com/josharian/impl
-github.com/k0kubun/pp
-github.com/kisielk/godepgraph
-github.com/monochromegane/mdt/...
-github.com/motemen/gore
-github.com/nsf/gocode
-github.com/sbinet/go-eval
-github.com/sbinet/igo
-golang.org/x/tools/cmd/godoc
-github.com/dufferzafar/cheat
--u github.com/derekparker/delve/cmd/dlv
-github.com/sclevine/yj
-github.com/rakyll/gotest
+github.com/cortesi/modd/cmd/modd@latest
+github.com/josharian/impl@latest
+github.com/x-motemen/gore/cmd/gore@latest
+golang.org/x/tools/cmd/godoc@latest
+golang.org/x/tools/gopls@latest
