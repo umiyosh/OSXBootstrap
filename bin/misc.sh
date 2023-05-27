@@ -34,3 +34,8 @@ fi
 if [[ ! -d $HOME/bin ]]; then
   ln -s $HOME/Dropbox/bin $HOME/bin
 fi
+
+if [[ ! -d $HOME/lib ]]; then
+  ln -s $HOME/Dropbox/lib $HOME/lib
+fi
+
