@@ -3,3 +3,4 @@ github.com/josharian/impl@latest
 github.com/x-motemen/gore/cmd/gore@latest
 golang.org/x/tools/cmd/godoc@latest
 golang.org/x/tools/gopls@latest
+github.com/Omochice/deepl-translate-cli@latest
