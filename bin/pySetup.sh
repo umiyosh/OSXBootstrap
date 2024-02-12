@@ -14,3 +14,6 @@ do
 done
 
 pip install -r ./pythonPackages
+
+curl -sSf https://rye-up.com/get | bash
+
