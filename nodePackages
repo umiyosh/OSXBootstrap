@@ -9,3 +9,4 @@ prettier
 bash-language-server
 @githubnext/github-copilot-cli
 aicommits
+@anthropic-ai/claude-code
