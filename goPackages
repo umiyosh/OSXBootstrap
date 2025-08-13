@@ -6,3 +6,5 @@ golang.org/x/tools/gopls@latest
 github.com/Omochice/deepl-translate-cli@latest
 golang.org/x/tools/cmd/goimports@latest
 mvdan.cc/gofumpt@latest
+github.com/Omochice/deepl-translate-cli@latest
+
