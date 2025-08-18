@@ -30,3 +30,4 @@ neovim
 ansible-lint
 shell-gpt
 uv
+pyautogui
