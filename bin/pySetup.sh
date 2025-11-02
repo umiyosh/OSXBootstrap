@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-
-PYVERSION=$(python -V | awk '{print $2}' | cut -d'.' -f1,2)
+PYVERSION=python3.13
+PYENV=3.13
 CUR=$(pwd)
 cd ~
-python -m venv python_v${PYVERSION}
+$PYVERSION -m venv python_v${PYENV}
 cd $CUR
 export PATH=~/.local/bin:$PATH
 source ~/python_v${PYVERSION}/bin/activate
