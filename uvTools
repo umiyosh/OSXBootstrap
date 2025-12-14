@@ -1,0 +1,6 @@
+# uv tool install でインストールするツール
+# 段階移行フェーズ1: 最小セット
+ruff
+mypy
+httpie
+pynvim
