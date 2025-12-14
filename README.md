@@ -56,10 +56,24 @@ PY_SETUP_MODE=uv ./bin/pySetup.sh
 
 ## PATH 設定
 
-uv ツールを使用するには、以下を shell config に追加してください:
+uv ツールを使用するには、PATH に uv のバイナリディレクトリを追加する必要があります。
+
+**推奨（一度だけ実行）:**
 
 ```bash
-export PATH="$(uv tool dir --bin):$PATH"
+uv tool update-shell
+```
+
+これにより、一般的なシェル設定ファイル（.bashrc, .zshrc 等）に自動で PATH が追加されます。
+
+**手動で設定する場合:**
+
+```bash
+# バイナリディレクトリを確認
+uv tool dir --bin
+
+# shell config に追加（例: ~/.zshrc）
+export PATH="$HOME/.local/bin:$PATH"
 ```
 
 ## 動作確認

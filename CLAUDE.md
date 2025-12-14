@@ -39,7 +39,7 @@ cd OSXBootstrap/
 
 | スクリプト | 説明 | バージョン管理ツール |
 |-----------|------|---------------------|
-| `pySetup.sh` | Python環境 | venv + pipx + rye |
+| `pySetup.sh` | Python環境 | uv + venv + pipx + rye（モード切替可） |
 | `goSetup.sh` | Go環境 | gvm |
 | `nodeSetup.sh` | Node.js環境 | nodebrew |
 | `rbSetup.sh` | Ruby環境 | rbenv |
@@ -47,15 +47,33 @@ cd OSXBootstrap/
 | `scalaSetup.sh` | Scala環境 | scalaenv |
 | `misc.sh` | macOS設定 + mackup restore |
 
+### pySetup.sh のモード対応
+
+`PY_SETUP_MODE` 環境変数でセットアップモードを切り替え可能:
+
+| モード | 説明 |
+|--------|------|
+| `legacy` | 既存動作（venv + pipx + pip + rye） |
+| `uv` | uv によるセットアップのみ |
+| `both` | 両方実行（**デフォルト**） |
+
+```bash
+PY_SETUP_MODE=legacy ./bin/pySetup.sh  # 既存動作のみ
+PY_SETUP_MODE=uv ./bin/pySetup.sh      # uv のみ
+./bin/pySetup.sh                        # both（デフォルト）
+```
+
 ### パッケージリストファイル
 
 各言語のパッケージリストはルートディレクトリに配置:
 - `goPackages` - Go tools (gopls, goimports, staticcheck等)
 - `nodePackages` - npm packages (prettier, bash-language-server, claude-code等)
-- `pythonPackages` - pip packages (httpie, awscli, flake8等)
+- `pythonPackages` - pip packages (httpie, awscli, flake8等) - **legacy用**
 - `rubyPackages` - gems (bundler, chef等)
 - `perlPackages` - CPAN modules
-- `pipsiPackages` - pipxでインストールするパッケージ
+- `pipsiPackages` - pipxでインストールするパッケージ - **legacy用**
+- `uvTools` - uv tool install でインストールするツール（ruff, mypy, httpie, pynvim）
+- `uvPythons` - uv python install でインストールするPythonバージョン
 
 ## 関連リポジトリ
 
