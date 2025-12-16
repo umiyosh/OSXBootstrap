@@ -55,10 +55,10 @@ read_list_file() {
     local file="$1"
     if [[ ! -f "$file" ]]; then
         log_warn "File not found: $file"
-        return 1
+        return 0  # ファイルが無い場合は空として扱う（set -e との相性のため）
     fi
-    # 空行とコメント行を除外して読み込み
-    grep -v '^\s*$' "$file" | grep -v '^\s*#' || true
+    # コメント除去してから空行除外
+    sed 's/#.*//' "$file" | awk '{$1=$1}; NF'
 }
 
 check_command() {
@@ -95,6 +95,16 @@ check_uv_path() {
 # -----------------------------------------------------------------------------
 setup_legacy() {
     log_section "Legacy Python Setup"
+
+    # 依存コマンドの存在確認
+    if ! check_command "$PYVERSION"; then
+        log_error "$PYVERSION is not installed. Install via: brew install python@3.13"
+        return 1
+    fi
+    if ! check_command "pipx"; then
+        log_error "pipx is not installed. Install via: brew install pipx"
+        return 1
+    fi
 
     local original_dir
     original_dir="$(pwd)"
