@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git rev-parse:*)",
+      "mcp__filesystem__list_directory",
+      "mcp__filesystem__read_multiple_files",
+      "Bash(git -C /Users/yoshikazu.umino/OSXBootstrap add CLAUDE.md)",
+      "mcp__filesystem__write_file",
+      "Bash(git -C /Users/yoshikazu.umino/OSXBootstrap rev-parse:*)",
+      "Bash(git -C /Users/yoshikazu.umino/OSXBootstrap log --oneline -5)"
+    ]
+  }
+}

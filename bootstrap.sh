@@ -44,6 +44,7 @@ brew install rcmdnk/file/brew-file
 brew file set_repo
 ./bin/goSetup.sh
 ./bin/nodeSetup.sh
+./bin/yaziSetup.sh
 ./bin/plSetup.sh
 ./bin/rbSetup.sh
 ./bin/scalaSetup.sh
